@@ -2,7 +2,7 @@ pipeline {
     /* Define RE-USABLE variables */
     environment {
         /* IMAGE NAME tobe Build and push */
-        registry = "mhendr/sample-aspnet"
+        registry = "vickykumawat766/sample-aspnet"
         /* Registry Credentials
          Manage Jenkins > Manage Credentials > Click on "Jenkins" Under "Store" > Global Credentials 
          Click "Add Credentials" link on left side panel
@@ -18,7 +18,7 @@ pipeline {
         
         stage('Pull Source'){
             steps {
-                git "https://github.com/mahendra-shinde/asp.net-core-ci"
+                git "https://github.com/vickykumawat/asp.net-core-ci"
             }
         }
         stage('Building image') {
